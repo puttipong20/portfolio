@@ -1,0 +1,244 @@
+html,body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #5C2612;
+    align-items: center;
+    box-sizing: border-box;
+    font-family: 'Thasadith', sans-serif;
+}
+.welcome{
+    color: black;
+}
+.welcome h3{
+    opacity: 0.5;
+}
+.read{
+    display: flex;
+    justify-content: center;
+
+}
+.read li {
+    list-style: none;
+    margin: 10px;
+    padding: 10px;
+    display: inline-block;
+    border: 1px solid;
+    border-radius: 10px;
+    position: sticky;
+    top: 15px;
+}
+.read a{
+    text-decoration: none;
+    color: black;
+}
+.read li:hover{
+    background-color: white;
+    color: black;
+    transition: .3s;
+    padding:10px;
+    border-radius: 10px;
+}
+.detail{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+    column-gap: 25px;
+    grid-template-columns: 1fr 1fr;
+}
+.detail .a{
+    margin: 10px;
+    padding: 10px;
+    width:100%;
+    height: 300px;
+    border-radius: 5px;
+    box-shadow: 3px -4px 5px 5px gray;
+}
+.detail .a0{
+    text-align: left;
+    background-color: #5C2612;
+    color: white;
+}
+.detail .a1{
+    background-color: #E8B158;
+}
+.detail img{
+    width: 200px;
+    box-shadow: 0px 0px 5px 5px white;
+}
+.certificate{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+    justify-content: center;
+    text-align: center;
+}
+.cer1 img{
+    width: 90%;
+    height: 150px;
+    background-color:aliceblue;
+    border:1px solid;
+}
+.skill{
+    display: flex;
+    margin: 0px auto;
+    justify-content: center;
+}
+.skill table{
+    text-align: center;
+    width: 50%;
+    background-color: aquamarine;
+}
+.skill table,th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.content{
+    margin: 0px 20%;
+    padding: 10px 70px;
+    background-color: rgb(244,227,181);
+    font-size: 16pt;
+    display:block;
+}
+.title{
+    text-align: right;
+    padding-top: 5px;
+}
+.title1{
+    text-align: left;
+}
+.welcome{
+    border: 1px solid;
+    text-align: center;
+}
+
+.ability .i{
+    display: inline-block;
+    border: solid 1px;
+    margin: 10px;
+    padding: 10px;
+    width: 40%;
+}
+.clr{
+    clear: both;
+}
+button{
+    padding: 20px 50px;
+    font-size:1.5rem;
+    cursor: pointer;
+    border: 0px;
+    background: transparent;
+    position:relative;
+    margin: 20px ;
+    transition: all 0.1s ease;
+
+}
+.btn-1:hover::after{
+    transform: translate(-5px, -5px);
+}
+.btn-1:hover::before{
+    transform: translate(5px , 5px);
+}
+.btn-1::after,.btn-1::before{
+    content: "";
+    border:3px solid #000;
+    position:absolute;
+    border-radius:inherit;
+    width: calc(100% - 6px);
+    height: calc(100% - 6px);
+    left:0;
+    bottom: 0;
+    z-index:0;
+    transition: all 0.1 ease;
+}
+.btn-1 a{
+    text-decoration:none;
+    color:#000;
+}
+.footer p{
+    margin: 0px 0px;
+    padding: 1px;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+@media screen and (max-width:500px){
+    body,html{
+        font-size: 1em;
+    }
+    main{
+        box-sizing: border-box;
+        display: block;
+        text-align: center;
+        align-items: center;
+    }
+    .content{
+        width: 90%;
+        padding: 5px 10px;
+        margin: 0px 10px;
+        font-size: 1rem;
+    }
+    .read ul li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 50px;
+    }
+    .detail{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .detail .a{
+        border: solid 1px;
+        margin: 5px;
+        padding: 5px;
+        width: 70%;
+    }
+    .certificate{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .cer1{
+        text-align: center;
+        border: solid 1px;
+        margin: 5px;
+        padding: 5px;
+        width:40% ;
+    }
+    .ability{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .ability .i{
+        display: block;
+        border: solid 1px;
+        margin: 5px;
+        padding: 5px;
+        width: 200px;
+    }
+}
+@media (min-width: 500px) and (max-width:800px){
+    html,body{
+        font-size: 1.4em;
+        height: 100%;
+    }
+    .content{
+        width: 90%;
+        padding: 0px 10px ;
+        margin: 0px 25px;
+    }
+    .read ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .red ul li {
+    width: 40%;
+    margin: 10px;
+    padding: 10px;
+    }
+}
